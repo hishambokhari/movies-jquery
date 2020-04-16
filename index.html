@@ -18,16 +18,9 @@
   </nav>
 
   <div class="container">
-    <div class="jumbotron">
-      <h3 class="text-center">Search for any movie</h3>
-      <form id="searchForm">
-        <input type="text" class="form-control" id="searchText" placeholder="Search Movie">
-      </form>
-    </div>
-  </div>  
+    <div id="movies" class="well">
 
-  <div class="container">
-    <div id="movies" class="row"></div>
+    </div>
   </div>
 
   <script
@@ -36,5 +29,8 @@
   crossorigin="anonymous"></script>
   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   <script src="movies.js"></script>
+  <script>
+    getMovie();
+  </script>
 </body>
 </html>
